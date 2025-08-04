@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 
 // --- Security ---
 // Basic Authentication middleware
-const users = { 'admin': 'password' }; // IMPORTANT: Use environment variables in a real application
+const users = { 'safetyadm': 'safetyfixs801!' }; // IMPORTANT: Use environment variables in a real application
 const unauthorizedResponse = (req) => {
     return req.auth ? ('Credentials ' + req.auth.user + ':' + req.auth.password + ' rejected') : 'No credentials provided';
 };
